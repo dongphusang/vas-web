@@ -1,0 +1,2 @@
+This folder contains third party library and follows the facade pattern. One facade that wraps the actual library, to be used by all components. If you
+need to update library, you only need to update the library file itself and not its users

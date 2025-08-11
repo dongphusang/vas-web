@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.nav {
+  @apply flex items-stretch justify-center text-black;
+}
+
+.nav ul {
+  @apply flex p-0 m-0 list-none gap-[3rem];
+}
+
+.nav img {
+  @apply pr-[7rem];
+}
+
+.nav a {
+  @apply text-inherit font-bold decoration-0 h-[100%] flex items-center p-[0.25rem];
+}
+
+.nav li:hover {
+  @apply text-gray-500;
+}
