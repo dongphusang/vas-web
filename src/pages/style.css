@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer base {
+    h1 {
+        @apply text-[#672F2F] text-4xl font-bold
+    }
+    
+    p {
+        @apply text-[#001524] text-[1.1rem] font-semibold
+    }
+}
+
+@utility gradient-header {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#662F2F] from-20% via-[#A84A4A] via-50% to-[#889E73] to-[100%]
+}

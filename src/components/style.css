@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+
+}
+
+@utility left-aligned { 
+    @apply flex flex-col max-w-[27.75rem] min-w-[13.5rem] gap-y-[1rem] text-left
+}
+
+@utility right-aligned { 
+    @apply flex flex-col max-w-[27.75rem] min-w-[13.5rem] gap-y-[1rem] text-right
+}
+
+@layer base {
+    h1 {
+        @apply text-[#672F2F] text-5xl font-bold
+    }
+
+    p {
+        @apply text-[#001524] text-[1.1rem] font-semibold
+    }
+}

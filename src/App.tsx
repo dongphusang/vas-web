@@ -8,7 +8,7 @@ import JoinUs from "./pages/JoinUs";
 
 function App() {
   return <>
-    <NavBar/>
+    {/* <NavBar/> */}
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/team" element={<Team />} />
