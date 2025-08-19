@@ -1,16 +1,17 @@
 import landingGallery from "../assets/landing-gallery.png";
 import { HOME } from "../assets/HomeContent";
+import CardTypeOne from "../components/CardTypeOne";
 import "./style.css";
 
 export default function Home() {
     return (
         <>
-            <div className="flex flex-col p-10 gap-y-20 bg-[#FAF5EF] bg-[url('../assets/lotus-background.png')] bg-no-repeat bg-center bg-contain lg:bg-cover">
+            <div className="flex flex-col p-15 mb-20 gap-y-20 bg-[#FAF5EF] bg-[url('../assets/lotus-background.png')] bg-no-repeat bg-center bg-contain lg:bg-cover">
                 {/* Welcome */}
                 <section className="flex flex-col justify-center items-center gap-y-10
                                     text-center">
                     <h1 className="text-5xl leading-15"> {HOME.WELCOME_TITLE} </h1>
-                    <p className="text-[1.3rem] leading-10 max-w-[48rem]"> {HOME.WELCOME_TEXT} </p>
+                    <p className="text-[1.3rem] leading-10 font-medium max-w-[48rem]"> {HOME.WELCOME_TEXT} </p>
                 </section>
 
                 {/* Achievements */}
@@ -47,6 +48,21 @@ export default function Home() {
             </div>
 
             {/* Program Offering Section */}
+            <div className="flex flex-col justify-center items-center gap-y-20 pt-10 bg-[#FAF5EF] md:gap-y-5">
+                {/*Title*/}
+                <section className="flex flex-col self-start items-start px-10 gap-y-10 md:max-w-5/6 lg:max-w-3/5 md:p-20"> 
+                    <h1 className="leading-13 md:text-5xl"> {HOME.PROGRAM_OFFERING_TITLE} </h1>
+                    <p className="leading-8 font-medium md:text-[1.3rem]"> {HOME.PROGRAM_OFFERING_TEXT} </p>
+                    <button className="gradient-button"> {HOME.PROGRAM_BUTTON_TEXT} </button>
+                </section>
+                {/*Program cards*/}
+                <section className="grid grid-cols-1 lg:grid-cols-3 p-10 md:p-20 gap-10 md:gap-20 w-full h-auto bg-[#672F2F]/25 ">
+                    <CardTypeOne name="Vietnamese Language" />
+                    <CardTypeOne name="Piano" />
+                    <CardTypeOne name="Chess" />
+                </section>
+            
+            </div>
 
             {/* Upcoming Event Section */}
 

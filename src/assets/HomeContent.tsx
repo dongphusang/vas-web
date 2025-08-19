@@ -11,5 +11,8 @@ export const HOME = {
     MISSION_TITLE : "Our Mission",
     MISSION_TEXT : "The Vietnamese Association Sudbury is dedicated to fostering a vibrant and supportive community through cultural celebrations, food festivals, and youth activities",
     MISSION_EXTRA_TEXT : "We look forward to seeing you at our next events!",
+    PROGRAM_OFFERING_TITLE: "Tomorrow is for the Taking!",
+    PROGRAM_OFFERING_TEXT: "Looking for something fun and engaging on Saturdays? Come learn chess, play piano, or explore the Vietnamese language in our free class for kids and families!",
+    PROGRAM_BUTTON_TEXT: "Learn More >>",
 } as const;
 

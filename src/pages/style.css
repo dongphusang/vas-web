@@ -2,14 +2,18 @@
 
 @layer base {
     h1 {
-        @apply text-[#672F2F] text-4xl font-bold
+        @apply text-[#672F2F] text-4xl font-medium font-serif
     }
     
     p {
-        @apply text-[#001524] text-[1.1rem] font-semibold
+        @apply text-[#001524] text-[1.1rem] font-normal font-serif
     }
 }
 
 @utility gradient-header {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[#662F2F] from-20% via-[#A84A4A] via-50% to-[#889E73] to-[100%]
+}
+
+@utility gradient-button {
+    @apply w-40 h-12 rounded-4xl bg-gradient-to-tl shadow-lg shadow-black/20 from-[#672F2F] to-[#A84A4A] text-[#FAF5EF] text-[1rem] text-sm font-semibold hover:bg-gradient-to-bl hover:shadow-[#672F2F]/40 hover:outline-none
 }
