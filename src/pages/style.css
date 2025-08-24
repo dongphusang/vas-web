@@ -14,6 +14,10 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-[#662F2F] from-20% via-[#A84A4A] via-50% to-[#889E73] to-[100%]
 }
 
-@utility gradient-button {
-    @apply w-40 h-12 rounded-4xl bg-gradient-to-tl shadow-lg shadow-black/20 from-[#672F2F] to-[#A84A4A] text-[#FAF5EF] text-[1rem] text-sm font-semibold hover:bg-gradient-to-bl hover:shadow-[#672F2F]/40 hover:outline-none
+@utility gradient-button-1 {
+    @apply w-40 h-12 rounded-4xl border-1 border-[#889E73] bg-gradient-to-tl shadow-lg shadow-black/20 from-[#672F2F] to-[#A84A4A] text-[#FAF5EF] text-[1rem] text-sm font-semibold hover:bg-gradient-to-bl hover:shadow-[#672F2F]/40 hover:outline-none
+}
+
+@utility secondary-button {
+    @apply w-40 h-12 rounded-4xl border-1 border-[#889E73] shadow-lg shadow-black/20 bg-[#A84A4A]/10 hover:bg-[#A84A4A]/50 text-[#121212]/90 text-[1rem] text-sm font-semibold
 }

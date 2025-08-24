@@ -2,6 +2,8 @@ import landingGallery from "../assets/landing-gallery.png";
 import { HOME } from "../assets/HomeContent";
 import CardTypeOne from "../components/CardTypeOne";
 import "./style.css";
+import EventCard from "../components/EventCard";
+import EventCardDetails from "../components/EventCardDetails";
 
 export default function Home() {
     return (
@@ -48,23 +50,53 @@ export default function Home() {
             </div>
 
             {/* Program Offering Section */}
-            <div className="flex flex-col justify-center items-center gap-y-20 pt-10 bg-[#FAF5EF] md:gap-y-5">
+            <div className="flex flex-col justify-center items-center gap-y-20 pt-10 mb-20 bg-[#FAF5EF] md:gap-y-5">
                 {/*Title*/}
                 <section className="flex flex-col self-start items-start px-10 gap-y-10 md:max-w-5/6 lg:max-w-3/5 md:p-20"> 
                     <h1 className="leading-13 md:text-5xl"> {HOME.PROGRAM_OFFERING_TITLE} </h1>
                     <p className="leading-8 font-medium md:text-[1.3rem]"> {HOME.PROGRAM_OFFERING_TEXT} </p>
-                    <button className="gradient-button"> {HOME.PROGRAM_BUTTON_TEXT} </button>
+                    <button className="gradient-button-1"> {HOME.PROGRAM_BUTTON_TEXT} </button>
                 </section>
                 {/*Program cards*/}
                 <section className="grid grid-cols-1 lg:grid-cols-3 p-10 md:p-20 gap-10 md:gap-20 w-full h-auto bg-[#672F2F]/25 ">
                     <CardTypeOne name="Vietnamese Language" />
                     <CardTypeOne name="Piano" />
                     <CardTypeOne name="Chess" />
-                </section>
-            
+                </section>        
             </div>
 
             {/* Upcoming Event Section */}
+            <div className="flex flex-col justify-center items-center p-5 pt-10 bg-[#FAF5EF]">
+                <h1 className="mb-12 self-start text-[#672F2F]/90 md:text-5xl"> Upcoming Events </h1>
+                <div className="flex flex-col self-start gap-y-30">
+                    {/* event cards */}
+                    <section className="flex flex-col gap-4">
+                        <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
+                        <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
+                        <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
+                    </section>
+                    {/* Event picked */}
+                    <div className="flex flex-col gap-y-8">
+                        {/* thumbnail */}
+                        <section className="bg-[url(../assets/event-thumbnail.png)] bg-fit bg-no-repeat w-full h-[17rem] p-3 rounded-[0.5rem]">
+                            <div className="flex flex-col justify-center items-center p-1 rounded-[0.5rem] bg-[#FAF5EF]/90 w-[4rem] h-[4rem]">
+                                <h1 className="text-[2rem] text-[#672F2F]/90"> 01 </h1>
+                                <p className="text-[1rem] font-semibold text-[#001524]/70"> Jan </p>
+                            </div>
+                        </section>
+                        {/* description */}
+                        <section>
+                            <EventCardDetails/>
+                        </section>
+                        {/* buttons */}
+                        <section className='flex flex-col gap-y-4 mt-[2.5rem]'>
+                            <button className="gradient-button-1 w-[13rem] h-[3rem]"> Get Ticket! </button>
+                            <button className="secondary-button w-[13rem] h-[3rem] "> Past Gallery </button>
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>
 
             {/* Donation Section */}
 
