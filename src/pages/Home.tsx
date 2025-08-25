@@ -1,14 +1,24 @@
 import landingGallery from "../assets/landing-gallery.png";
+import orgLogo from "../assets/org-logo.svg"
+import krystalBeautyLogo from "../assets/sponsor-krystalbeauty-logo.svg"
+import waldenLogo from "../assets/sponsor-walden-logo.svg"
+import innovaLogo from "../assets/sponsor-innova-logo.svg"
+import pharmaChoiceLogo from "../assets/sponsor-pharma-logo.svg"
+import nickelCitySurplusLogo from "../assets/sponsor-nickelcity-logo.svg"
+import teamTalaricoLogo from "../assets/sponsor-talarico-logo.svg"
+import eyeLevelLogo from "../assets/sponsor-eyelevel-logo.svg"
+import scotiaWealthLogo from "../assets/sponsor-scotia-logo.svg"
 import { HOME } from "../assets/HomeContent";
 import CardTypeOne from "../components/CardTypeOne";
 import "./style.css";
 import EventCard from "../components/EventCard";
 import EventCardDetails from "../components/EventCardDetails";
+import SponsorCard from "../components/SponsorCard";
 
 export default function Home() {
     return (
         <>
-            <div className="flex flex-col p-15 mb-20 gap-y-20 bg-[#FAF5EF] bg-[url('../assets/lotus-background.png')] bg-no-repeat bg-center bg-contain lg:bg-cover">
+            <div className="flex flex-col p-5 mb-20 gap-y-20 bg-[#FAF5EF] bg-[url('../assets/lotus-background.png')] bg-no-repeat bg-center bg-contain lg:bg-cover">
                 {/* Welcome */}
                 <section className="flex flex-col justify-center items-center gap-y-10
                                     text-center">
@@ -66,7 +76,7 @@ export default function Home() {
             </div>
 
             {/* Upcoming Event Section */}
-            <div className="flex flex-col justify-center items-center p-5 pt-10 bg-[#FAF5EF]">
+            <div className="flex flex-col justify-center items-center p-5 mb-20 pt-10 bg-[#FAF5EF]">
                 <h1 className="mb-12 self-start text-[#672F2F]/90 md:text-5xl"> Upcoming Events </h1>
                 <div className="flex flex-col self-start gap-y-30">
                     {/* event cards */}
@@ -90,17 +100,70 @@ export default function Home() {
                         </section>
                         {/* buttons */}
                         <section className='flex flex-col gap-y-4 mt-[2.5rem]'>
-                            <button className="gradient-button-1 w-[13rem] h-[3rem]"> Get Ticket! </button>
-                            <button className="secondary-button w-[13rem] h-[3rem] "> Past Gallery </button>
+                            <button className="gradient-button-1 w-2/3 h-[3rem]"> Get Ticket! </button>
+                            <button className="secondary-button w-2/3 h-[3rem] "> Past Gallery </button>
                         </section>
-                        
                     </div>
                 </div>
             </div>
 
             {/* Donation Section */}
+            <div className="flex flex-col gap-y-4 p-5 mb-20 border-y-8 border-y-[#672F2F]/90 bg-[#FAF5EF]">
+                {/* organization title */}
+                <section className="flex flex-row gap-x-2">
+                    <img src={orgLogo}/>
+                    <p className="text-[1rem] text-[#672F2F]/90 font-medium"> Vietnamese Association Sudbury </p>
+                </section>
+
+                {/* Title & Description */}
+                <section className="flex flex-col gap-y-4">
+                    <h1 className="text-[2.5rem] text-[#672F2F]/90"> Our Heart are Filled with Gratitude </h1>
+                    <p className="text-[1rem] text-[#672F2F]/70"> We give thanks for your kind support to fuel the hope we share. Strong together, brighter together. </p>
+                </section>
+
+                {/* button */}
+                <section className="mt-8">
+                    <button className="gradient-button-1 w-1/2 h-[3rem] "> DONATE NOW </button>
+                </section>
+            </div>
 
             {/* Sponsors Section */}
+            <div className="flex flex-col gap-[3rem] p-5 pt-10 bg-[#FAF5EF]">
+                {/* title & description*/}
+                <section className="flex flex-col gap-[1rem]">
+                    <h1 className="text-[2.5rem] text-[#672F2F]90"> Our Sponsors of 2025 </h1>
+                    <p className="text-[1rem] text-[#672F2F]/70"> Our big events is kindly supported by our big wig partners. Big thanks to them all </p>
+                </section>
+                
+                {/* diamond sponsors */}
+                <div className="flex flex-col gap-[1.5rem]">
+                    <h2 className="text-[1.8rem] gradient-header"> Diamond Sponsors </h2> {/* title */}
+                    <section className="flex flex-col gap-[1rem]"> {/* sponsors */}
+                        <SponsorCard link={krystalBeautyLogo}/>
+                        <SponsorCard link={waldenLogo}/>
+                    </section>
+                </div>
+                
+                {/* silver sponsors */}
+                <div className="flex flex-col gap-[1.5rem]">
+                    <h2 className="text-[1.8rem] gradient-header"> Silver Sponsors</h2> {/* title */}
+                    <section className="flex flex-col gap-[1rem]"> {/* sponsors */}
+                        <SponsorCard link={innovaLogo}/>
+                    </section>
+                </div>
+
+                {/* bronze sponsors */}
+                <div className="flex flex-col gap-[1.5rem]">
+                    <h2 className="text-[1.8rem] gradient-header "> Bronze Sponsors </h2> {/* title */}
+                    <section className="flex flex-col gap-[1rem]"> {/* sponsors */}
+                        <SponsorCard link={pharmaChoiceLogo}/>
+                        <SponsorCard link={nickelCitySurplusLogo}/>
+                        <SponsorCard link={teamTalaricoLogo}/>
+                        <SponsorCard link={eyeLevelLogo}/>
+                        <SponsorCard link={scotiaWealthLogo}/>
+                    </section>
+                </div>
+            </div>
 
             {/* Contact Section (maybe make this a footer?)*/}
         </>

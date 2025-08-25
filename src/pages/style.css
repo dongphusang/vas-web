@@ -8,6 +8,10 @@
     p {
         @apply text-[#001524] text-[1.1rem] font-normal font-serif
     }
+
+    h2 {
+        @apply font-serif
+    }
 }
 
 @utility gradient-header {
