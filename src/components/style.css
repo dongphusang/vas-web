@@ -12,6 +12,10 @@
     @apply flex flex-col max-w-[27.75rem] min-w-[13.5rem] gap-y-[1rem] text-right
 }
 
+@utility leaflet-style {
+    @apply h-[15rem] w-full
+}
+
 @layer base {
     h1 {
         @apply text-[#672F2F] text-5xl font-bold

@@ -128,7 +128,7 @@ export default function Home() {
             </div>
 
             {/* Sponsors Section */}
-            <div className="flex flex-col gap-[3rem] p-5 pt-10 bg-[#FAF5EF]">
+            <div className="flex flex-col gap-[3rem] p-5 pt-10 mb-20 bg-[#FAF5EF]">
                 {/* title & description*/}
                 <section className="flex flex-col gap-[1rem]">
                     <h1 className="text-[2.5rem] text-[#672F2F]90"> Our Sponsors of 2025 </h1>
@@ -164,8 +164,6 @@ export default function Home() {
                     </section>
                 </div>
             </div>
-
-            {/* Contact Section (maybe make this a footer?)*/}
         </>
         
     );
