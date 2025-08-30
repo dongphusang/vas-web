@@ -15,7 +15,7 @@
 }
 
 @utility gradient-header {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#662F2F] from-20% via-[#A84A4A] via-50% to-[#889E73] to-[100%]
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#662F2F]/90 from-10% via-[#A84A4A] via-30% to-[#889E73] to-[90%]
 }
 
 @utility gradient-button-1 {

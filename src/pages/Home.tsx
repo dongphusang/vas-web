@@ -14,46 +14,50 @@ import "./style.css";
 import EventCard from "../components/EventCard";
 import EventCardDetails from "../components/EventCardDetails";
 import SponsorCard from "../components/SponsorCard";
+import PlaceHolder from "../assets/event-thumbnail.png";
+import DonationCard from "../components/DonationCard";
 
 export default function Home() {
     return (
         <>
-            <div className="flex flex-col p-5 mb-20 gap-y-20 bg-[#FAF5EF] bg-[url('../assets/lotus-background.png')] bg-no-repeat bg-center bg-contain lg:bg-cover">
+            <div className="flex flex-col p-10 mb-20 gap-y-20 bg-[#FAF5EF]">
                 {/* Welcome */}
-                <section className="flex flex-col justify-center items-center gap-y-10
-                                    text-center">
-                    <h1 className="text-5xl leading-15"> {HOME.WELCOME_TITLE} </h1>
-                    <p className="text-[1.3rem] leading-10 font-medium max-w-[48rem]"> {HOME.WELCOME_TEXT} </p>
+                <section className="flex flex-col gap-y-10 md:items-center md:text-center">
+                    <h1 className="text-5xl leading-18 tracking-wide"> {HOME.WELCOME_TITLE} </h1>
+                    <p className="text-[1.3rem] text-[#672F2F]/90 leading-11 font-medium max-w-[48rem]"> {HOME.WELCOME_TEXT} </p>
                 </section>
 
                 {/* Achievements */}
-                <div className="flex flex-col gap-y-15 lg:grid lg:grid-cols-3
-                                text-center">
-                    {/* Landing Gallery */}                
-                    <img src={landingGallery} alt="gallery loading..." className="justify-self-center self-center lg:order-2 md:max-w-[75%] lg:min-w-[70%]" />
-                    {/* Birth and Event Quantity Section */}
-                    <div className="flex flex-col justify-around items-center lg:items-end gap-y-15 lg:order-1 
-                                    lg:text-right">
-                        <section className="flex flex-col gap-2.5 max-w-[14rem]">
-                            <h1 className="gradient-header"> {HOME.BIRTH_TITLE} </h1>
-                            <p> {HOME.BIRTH_TEXT} </p>
+                <div className="grid grid-cols-1 justify-center items-center gap-y-15 lg:grid-cols-3">
+                    {/* landing gallery */}                
+                    <img src={landingGallery} alt="gallery loading..." className="justify-self-center self-center md:w-3/4 lg:order-2" />
+
+                    {/* birth & event quant */}
+                    <div className="flex flex-col items-center text-center gap-y-15 
+                                    lg:order-1 lg:justify-center lg:items-end lg:text-end lg:h-full">
+                        <section className="flex flex-col gap-y-2.5 w-[14rem]"> {/* birth */}
+                            <h1 className="text-[2.5rem] gradient-header"> 2020 </h1>
+                            <p className="text-[1rem] text-[#672F2F]/70"> {HOME.BIRTH_TEXT} </p>
                         </section>
-                        <section className="flex flex-col gap-2.5 max-w-[14rem]">
-                            <h1 className="gradient-header"> {HOME.EVENTQUANT_TITLE} </h1>
-                            <p> {HOME.EVENTQUANT_TEXT} </p>
-                        </section>
+                        <section className="flex flex-col gap-y-2.5 w-[16rem]
+                                            lg:pt-[3rem] lg:h-full"> {/* free classes */}
+                            <h1 className="text-[2.5rem] gradient-header"> Free Classes </h1>
+                            <p className="text-[1rem] text-[#672F2F]/70"> {HOME.CLASSES_TEXT} </p>
+                        </section>                
                     </div>
-                    {/* Classes and Mission Section */}
-                    <div className="flex flex-col justify-around items-center lg:items-start gap-y-15 lg:order-3 
-                                    lg:text-left">
-                        <section className="flex flex-col gap-2.5 max-w-[16rem]">
-                            <h1 className="gradient-header"> {HOME.CLASSES_TITLE} </h1>
-                            <p> {HOME.CLASSES_TEXT} </p>
+                    
+                    {/* free classes & mission */}
+                    <div className="flex flex-col items-center text-center gap-y-15 
+                                    lg:order-3 lg:justify-center lg:items-start lg:text-start lg:h-full">
+                        <section className="flex flex-col gap-y-2.5 w-[14rem]"> {/* event quant */}
+                            <h1 className="text-[2.5rem] gradient-header"> 50+ </h1>
+                            <p className="text-[1rem] text-[#672F2F]/70"> {HOME.EVENTQUANT_TEXT} </p>
                         </section>
-                        <section className="flex flex-col gap-y-5 max-w-[20rem]">
-                            <h1 className="gradient-header"> {HOME.MISSION_TITLE} </h1>
-                            <p> {HOME.MISSION_TEXT} </p>
-                            <p> {HOME.MISSION_EXTRA_TEXT} </p>
+                        <section className="flex flex-col gap-y-2.5 w-[20rem]
+                                            lg:pt-[1.5rem] lg:h-full"> {/* mission */}
+                            <h1 className="text-[2.5rem] gradient-header"> Our Mission </h1>
+                            <p className="text-[1rem] text-[#672F2F]/70"> {HOME.MISSION_TEXT} </p>
+                            <p className="text-[1rem] text-[#672F2F]/70"> {HOME.MISSION_EXTRA_TEXT} </p>
                         </section>
                     </div>
                 </div>
@@ -61,14 +65,16 @@ export default function Home() {
 
             {/* Program Offering Section */}
             <div className="flex flex-col justify-center items-center gap-y-20 pt-10 mb-20 bg-[#FAF5EF] md:gap-y-5">
-                {/*Title*/}
+                {/* title */}
                 <section className="flex flex-col self-start items-start px-10 gap-y-10 md:max-w-5/6 lg:max-w-3/5 md:p-20"> 
                     <h1 className="leading-13 md:text-5xl"> {HOME.PROGRAM_OFFERING_TITLE} </h1>
                     <p className="leading-8 font-medium md:text-[1.3rem]"> {HOME.PROGRAM_OFFERING_TEXT} </p>
                     <button className="gradient-button-1"> {HOME.PROGRAM_BUTTON_TEXT} </button>
                 </section>
-                {/*Program cards*/}
-                <section className="grid grid-cols-1 lg:grid-cols-3 p-10 md:p-20 gap-10 md:gap-20 w-full h-auto bg-[#672F2F]/25 ">
+                {/* program cards */}
+                <section className="flex flex-col justify-center items-center p-10 bg-[#672F2F]/25 w-full
+                                    md:p-20 gap-10 md:gap-20
+                                    lg:flex-row lg:justify-around">
                     <CardTypeOne name="Vietnamese Language" />
                     <CardTypeOne name="Piano" />
                     <CardTypeOne name="Chess" />
@@ -76,22 +82,32 @@ export default function Home() {
             </div>
 
             {/* Upcoming Event Section */}
-            <div className="flex flex-col justify-center items-center p-5 mb-20 pt-10 bg-[#FAF5EF]">
-                <h1 className="mb-12 self-start text-[#672F2F]/90 md:text-5xl"> Upcoming Events </h1>
-                <div className="flex flex-col self-start gap-y-30">
-                    {/* event cards */}
-                    <section className="flex flex-col gap-4">
+            <div className="flex flex-col justify-center items-center p-5 mb-20 pt-10 bg-[#FAF5EF]
+                            md:p-10">
+                {/* title */}
+                <h1 className="mb-12 self-start text-[#672F2F]/90 
+                               md:text-5xl md:self-center"> Upcoming Events </h1>
+
+                {/* event */}
+                <div className="flex flex-col items-start gap-y-30
+                                md:items-center">
+                    <section className="flex flex-col gap-4
+                                        md:gap-[1.5rem]"> {/* event cards */}
                         <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
                         <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
                         <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
                     </section>
-                    {/* Event picked */}
-                    <div className="flex flex-col gap-y-8">
+                    <div className="flex flex-col gap-y-8
+                                    "> {/* event picked - to be made into an event card layout */}
                         {/* thumbnail */}
-                        <section className="bg-[url(../assets/event-thumbnail.png)] bg-fit bg-no-repeat w-full h-[17rem] p-3 rounded-[0.5rem]">
-                            <div className="flex flex-col justify-center items-center p-1 rounded-[0.5rem] bg-[#FAF5EF]/90 w-[4rem] h-[4rem]">
-                                <h1 className="text-[2rem] text-[#672F2F]/90"> 01 </h1>
-                                <p className="text-[1rem] font-semibold text-[#001524]/70"> Jan </p>
+                        <section className="bg-[url(../assets/event-thumbnail.png)] bg-center bg-cover bg-no-repeat w-full h-[17rem] p-3 rounded-[0.5rem]
+                                            md:h-[30rem]">
+                            <div className="flex flex-col justify-center items-center p-1 rounded-[0.5rem] bg-[#FAF5EF]/90 w-[4rem] h-[4rem]
+                                            md:w-[6rem] md:h-[6rem]">
+                                <h1 className="text-[2rem] text-[#672F2F]/90
+                                               md:text-[3rem]"> 01 </h1>
+                                <p className="text-[1rem] font-semibold text-[#001524]/70
+                                              md:text-[1.5rem]"> Jan </p>
                             </div>
                         </section>
                         {/* description */}
@@ -100,31 +116,19 @@ export default function Home() {
                         </section>
                         {/* buttons */}
                         <section className='flex flex-col gap-y-4 mt-[2.5rem]'>
-                            <button className="gradient-button-1 w-2/3 h-[3rem]"> Get Ticket! </button>
-                            <button className="secondary-button w-2/3 h-[3rem] "> Past Gallery </button>
+                            <button className="gradient-button-1 w-3/5 h-[3rem]
+                                               md:w-1/3"> Get Ticket! </button>
+                            <button className="secondary-button w-3/5 h-[3rem]
+                                               md:w-1/3"> Past Gallery </button>
                         </section>
                     </div>
                 </div>
             </div>
 
             {/* Donation Section */}
-            <div className="flex flex-col gap-y-4 p-5 mb-20 border-y-8 border-y-[#672F2F]/90 bg-[#FAF5EF]">
-                {/* organization title */}
-                <section className="flex flex-row gap-x-2">
-                    <img src={orgLogo}/>
-                    <p className="text-[1rem] text-[#672F2F]/90 font-medium"> Vietnamese Association Sudbury </p>
-                </section>
-
-                {/* Title & Description */}
-                <section className="flex flex-col gap-y-4">
-                    <h1 className="text-[2.5rem] text-[#672F2F]/90"> Our Heart are Filled with Gratitude </h1>
-                    <p className="text-[1rem] text-[#672F2F]/70"> We give thanks for your kind support to fuel the hope we share. Strong together, brighter together. </p>
-                </section>
-
-                {/* button */}
-                <section className="mt-8">
-                    <button className="gradient-button-1 w-1/2 h-[3rem] "> DONATE NOW </button>
-                </section>
+            <div className="mb-20 flex flex-row bg-[#FAF5EF] w-full">
+                {/* donate card */}
+                <DonationCard/>
             </div>
 
             {/* Sponsors Section */}

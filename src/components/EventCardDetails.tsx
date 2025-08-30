@@ -8,14 +8,14 @@ export default function EventCardDetails () {
     return (
         <>
             {/*flex, flex column, justify-start, items-start, gap-y-[1rem] */}
-            <div className="flex flex-col justify-start items-start gap-y-5 tracking-wide">
+            <div className="flex flex-col items-start gap-y-5 tracking-wide">
                 {/* Event Title */}
                 <h1 className="text-[2rem] text-[#672F2F]/90">
                     Vietnamese Lunar New Year
                 </h1>
 
                 {/* Event Details */}
-                <section className="flex flex-col gap-1 text-[0.5rem]">
+                <section className="flex flex-col gap-2 text-[0.5rem] text-nowrap">
                     {/* location */}
                     <div className='flex flex-row gap-x-2.5'> 
                         <img src={EventLocationLogo}/>
