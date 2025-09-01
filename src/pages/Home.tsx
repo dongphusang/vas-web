@@ -14,8 +14,9 @@ import "./style.css";
 import EventCard from "../components/EventCard";
 import EventCardDetails from "../components/EventCardDetails";
 import SponsorCard from "../components/SponsorCard";
-import PlaceHolder from "../assets/event-thumbnail.png";
+import PlaceHolder from "../assets/event-thumbnail.jpg";
 import DonationCard from "../components/DonationCard";
+import { useState, useEffect } from "react";
 
 export default function Home() {
     return (
@@ -100,7 +101,7 @@ export default function Home() {
                     <div className="flex flex-col gap-y-8
                                     "> {/* event picked - to be made into an event card layout */}
                         {/* thumbnail */}
-                        <section className="bg-[url(../assets/event-thumbnail.png)] bg-center bg-cover bg-no-repeat w-full h-[17rem] p-3 rounded-[0.5rem]
+                        <section className="bg-[url(../assets/event-thumbnail.jpg)] bg-center bg-cover bg-no-repeat w-full h-[17rem] p-3 rounded-[0.5rem]
                                             md:h-[30rem]">
                             <div className="flex flex-col justify-center items-center p-1 rounded-[0.5rem] bg-[#FAF5EF]/90 w-[4rem] h-[4rem]
                                             md:w-[6rem] md:h-[6rem]">
@@ -126,9 +127,10 @@ export default function Home() {
             </div>
 
             {/* Donation Section */}
-            <div className="mb-20 flex flex-row bg-[#FAF5EF] w-full">
+            <div className="flex flex-row justify-center items-center mb-20 p-5 w-full bg-[url(../assets/event-thumbnail.jpg)] bg-center bg-cover bg-no-repeat">
                 {/* donate card */}
                 <DonationCard/>
+                
             </div>
 
             {/* Sponsors Section */}
