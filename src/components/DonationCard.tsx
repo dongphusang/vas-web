@@ -6,7 +6,7 @@ import orgLogo from "../assets/org-logo.svg"
 
 export default function DonationCard() {
     return (
-            <div className="flex flex-col justify-center items-stretch gap-y-5 p-5 border-b-5 border-b-[#672F2F]/90 bg-[#FAF5EF]
+            <div className="flex flex-col justify-center items-stretch gap-y-5 p-7 border-b-8 border-b-[#672F2F]/90 bg-[#FAF5EF]
                             md:">
                 {/* organization title */}
                 <section className="flex flex-row gap-x-2">

@@ -8,6 +8,9 @@ import nickelCitySurplusLogo from "../assets/sponsor-nickelcity-logo.svg"
 import teamTalaricoLogo from "../assets/sponsor-talarico-logo.svg"
 import eyeLevelLogo from "../assets/sponsor-eyelevel-logo.svg"
 import scotiaWealthLogo from "../assets/sponsor-scotia-logo.svg"
+import diamondTitleLogo from "../assets/sponsor-diamondtitle-logo.svg"
+import silverTitleLogo from "../assets/sponsor-silvertitle-logo.svg"
+import bronzeTitleLogo from "../assets/sponsor-bronzetitle-logo.svg"
 import { HOME } from "../assets/HomeContent";
 import CardTypeOne from "../components/CardTypeOne";
 import "./style.css";
@@ -92,14 +95,15 @@ export default function Home() {
                 {/* event */}
                 <div className="flex flex-col items-start gap-y-30
                                 md:items-center">
+                    {/* event cards */}
                     <section className="flex flex-col gap-4
-                                        md:gap-[1.5rem]"> {/* event cards */}
+                                        md:gap-[1.5rem]">
                         <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
                         <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
                         <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
                     </section>
-                    <div className="flex flex-col gap-y-8
-                                    "> {/* event picked - to be made into an event card layout */}
+                    {/* event picked - to be made into an event card layout */}
+                    <div className="flex flex-col gap-y-8">
                         {/* thumbnail */}
                         <section className="bg-[url(../assets/event-thumbnail.jpg)] bg-center bg-cover bg-no-repeat w-full h-[17rem] p-3 rounded-[0.5rem]
                                             md:h-[30rem]">
@@ -134,17 +138,23 @@ export default function Home() {
             </div>
 
             {/* Sponsors Section */}
-            <div className="flex flex-col gap-[3rem] p-5 pt-10 mb-20 bg-[#FAF5EF]">
+            <div className="flex flex-col gap-[3rem] p-10 mb-20 bg-[#FAF5EF]">
                 {/* title & description*/}
                 <section className="flex flex-col gap-[1rem]">
-                    <h1 className="text-[2.5rem] text-[#672F2F]90"> Our Sponsors of 2025 </h1>
+                    <h1 className="text-[2.5rem] text-[#672F2F]/90"> Our Sponsors of 2025 </h1>
                     <p className="text-[1rem] text-[#672F2F]/70"> Our big events is kindly supported by our big wig partners. Big thanks to them all </p>
                 </section>
                 
                 {/* diamond sponsors */}
                 <div className="flex flex-col gap-[1.5rem]">
-                    <h2 className="text-[1.8rem] gradient-header"> Diamond Sponsors </h2> {/* title */}
-                    <section className="flex flex-col gap-[1rem]"> {/* sponsors */}
+                    {/* title */}
+                    <section className="flex flex-row gap-x-2">
+                        <h2 className="text-[1.8rem] gradient-header"> Diamond Sponsors </h2>
+                        <img src={diamondTitleLogo}/>
+                    </section>
+                    {/* sponsors */}
+                    <section className="flex flex-col gap-[1rem]
+                                        md:flex-row">
                         <SponsorCard link={krystalBeautyLogo}/>
                         <SponsorCard link={waldenLogo}/>
                     </section>
@@ -152,16 +162,29 @@ export default function Home() {
                 
                 {/* silver sponsors */}
                 <div className="flex flex-col gap-[1.5rem]">
-                    <h2 className="text-[1.8rem] gradient-header"> Silver Sponsors</h2> {/* title */}
-                    <section className="flex flex-col gap-[1rem]"> {/* sponsors */}
+                    {/* title */}         
+                    <section className="flex flex-row gap-x-2">
+                        <h2 className="text-[1.8rem] gradient-header"> Silver Sponsors</h2>
+                        <img src={silverTitleLogo}/>
+                    </section>
+                    {/* sponsors */}
+                    <section className="flex flex-col gap-[1rem]
+                                        md:flex-row">
                         <SponsorCard link={innovaLogo}/>
                     </section>
                 </div>
 
                 {/* bronze sponsors */}
                 <div className="flex flex-col gap-[1.5rem]">
-                    <h2 className="text-[1.8rem] gradient-header "> Bronze Sponsors </h2> {/* title */}
-                    <section className="flex flex-col gap-[1rem]"> {/* sponsors */}
+                    {/* title */}
+                    <section className="flex flex-row gap-x-2">
+                        <h2 className="text-[1.8rem] gradient-header"> Bronze Sponsors </h2>
+                        <img src={bronzeTitleLogo}/>
+                    </section>
+                    {/* sponsors */}
+                    <section className="flex flex-col gap-[1rem]
+                                        md:grid md:grid-cols-2 md:grid-rows-2 md:w-fit
+                                         lg:grid-cols-4"> 
                         <SponsorCard link={pharmaChoiceLogo}/>
                         <SponsorCard link={nickelCitySurplusLogo}/>
                         <SponsorCard link={teamTalaricoLogo}/>
