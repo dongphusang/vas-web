@@ -2,11 +2,11 @@
 
 @layer base {
     h1 {
-        @apply text-[#672F2F] text-4xl font-medium font-serif
+        @apply text-[#672F2F]/90 text-4xl font-medium font-serif
     }
     
     p {
-        @apply text-[#001524] text-[1.1rem] font-normal font-serif
+        @apply text-[#001524]/70 text-[1.1rem] font-normal font-serif
     }
 
     h2 {
