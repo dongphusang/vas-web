@@ -140,7 +140,8 @@ export default function Home() {
             </div>
 
             {/* Sponsors Section */}
-            <div className="flex flex-col gap-[3rem] p-10 mb-30 bg-[#FAF5EF]">
+            <div className="flex flex-col gap-[3rem] p-10 mb-30 bg-[#FAF5EF]
+                            lg:items-center lg:text-center lg:gap-[5rem]">
                 {/* title & description*/}
                 <section className="flex flex-col gap-[1rem]">
                     <h1 className="text-[2.5rem] text-[#672F2F]/90"> Our Sponsors of 2025 </h1>
@@ -148,9 +149,11 @@ export default function Home() {
                 </section>
                 
                 {/* diamond sponsors */}
-                <div className="flex flex-col gap-[1.5rem]">
+                <div className="flex flex-col gap-[1.5rem]
+                                lg:gap-[2rem]">
                     {/* title */}
-                    <section className="flex flex-row gap-[0.5rem]">
+                    <section className="flex flex-row gap-[0.5rem]
+                                        lg:justify-center">
                         <h2 className="text-[1.8rem] gradient-header"> Diamond Sponsors </h2>
                         <img src={diamondTitleLogo}/>
                     </section>
@@ -163,9 +166,11 @@ export default function Home() {
                 </div>
                 
                 {/* silver sponsors */}
-                <div className="flex flex-col gap-[1.5rem]">
-                    {/* title */}         
-                    <section className="flex flex-row gap-[0.5rem]">
+                <div className="flex flex-col gap-[1.5rem]
+                                lg:gap-[2rem]">
+                    {/* title */}
+                    <section className="flex flex-row gap-[0.5rem]
+                                        lg:justify-center">
                         <h2 className="text-[1.8rem] gradient-header"> Silver Sponsors</h2>
                         <img src={silverTitleLogo}/>
                     </section>
@@ -177,16 +182,18 @@ export default function Home() {
                 </div>
 
                 {/* bronze sponsors */}
-                <div className="flex flex-col gap-[1.5rem]">
+                <div className="flex flex-col gap-[1.5rem]
+                                lg:gap-[2rem]">
                     {/* title */}
-                    <section className="flex flex-row gap-[0.5rem]">
+                    <section className="flex flex-row gap-[0.5rem]
+                                        lg:justify-center">
                         <h2 className="text-[1.8rem] gradient-header"> Bronze Sponsors </h2>
                         <img src={bronzeTitleLogo}/>
                     </section>
                     {/* sponsors */}
                     <section className="flex flex-col gap-[1rem]
                                         md:grid md:grid-cols-2 md:w-fit
-                                        lg:columns-auto"> 
+                                        lg:grid-cols-5 lg:gap-[2rem]"> 
                         <SponsorCard link={pharmaChoiceLogo}/>
                         <SponsorCard link={nickelCitySurplusLogo}/>
                         <SponsorCard link={teamTalaricoLogo}/>
