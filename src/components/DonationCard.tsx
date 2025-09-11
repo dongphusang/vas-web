@@ -6,6 +6,8 @@ import orgLogo from "../assets/org-logo.svg"
 
 export default function DonationCard() {
     return (
+        <div className="shadow-md shadow-black/50
+                        lg:absolute lg:w-[32rem] lg:left-[20rem] lg:top-[4rem]">
             <div className="flex flex-col justify-center items-stretch gap-y-5 p-7 border-b-8 border-b-[#672F2F]/90 bg-[#FAF5EF]">
                 {/* organization title */}
                 <section className="flex flex-row gap-x-2">
@@ -21,9 +23,10 @@ export default function DonationCard() {
 
                 {/* button */}
                 <section className="mt-8">
-                    <button className="gradient-button-1 w-1/2 h-[3rem]
+                    <button className="gradient-button-1 w-1/2 h-[3rem] text-[0.8rem]
                                        md:w-1/3"> DONATE NOW </button>
                 </section>
             </div>
+        </div>
     );
 }

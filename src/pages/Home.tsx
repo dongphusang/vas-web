@@ -87,56 +87,41 @@ export default function Home() {
             </div>
 
             {/* Upcoming Event Section */}
-            <div className="flex flex-col justify-center items-center p-5 mb-30 pt-10 bg-[#FAF5EF]
-                            md:p-10">
-                {/* title */}
-                <h1 className="mb-12 self-start text-[#672F2F]/90 
-                               md:text-5xl md:self-center"> Upcoming Events </h1>
+            <div className="flex flex-col items-start gap-y-10 p-5 pt-10 mb-30 bg-[#FAF5EF]
+                            md:p-10 md:items-center
+                            lg:flex-row lg:justify-center lg:items-start lg:gap-x-10">
 
-                {/* event */}
-                <div className="flex flex-col items-start gap-y-30
-                                md:items-center">
-                    {/* event cards */}
-                    <section className="flex flex-col gap-4
-                                        md:gap-[1.5rem]">
-                        <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
-                        <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
-                        <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
-                    </section>
-                    {/* event picked - to be made into an event card layout */}
-                    <div className="flex flex-col gap-y-8 p-3 rounded-2xl bg-[#672F2F]/10
-                                    lg:w-4/5">
-                        {/* thumbnail */}
-                        <section className="bg-[url(../assets/event-thumbnail.jpg)] bg-center bg-cover bg-no-repeat h-[17rem] p-3 rounded-[0.5rem]
-                                            md:h-[30rem]">
-                            <div className="flex flex-col justify-center items-center p-1 rounded-[0.5rem] bg-[#FAF5EF]/90 w-[4rem] h-[4rem]
-                                            md:w-[6rem] md:h-[6rem]">
-                                <h1 className="text-[2rem] text-[#672F2F]/90
-                                               md:text-[3rem]"> 01 </h1>
-                                <p className="text-[1rem] font-semibold text-[#001524]/70
-                                              md:text-[1.5rem]"> Jan </p>
-                            </div>
-                        </section>
-                        {/* description */}
-                        <section>
-                            <EventCardDetails/>
-                        </section>
-                        {/* buttons */}
-                        <section className='flex flex-col gap-y-4 mt-[2.5rem]'>
-                            <button className="gradient-button-1 w-3/5 h-[3rem]
-                                               md:w-1/3"> Get Ticket! </button>
-                            <button className="secondary-button w-3/5 h-[3rem]
-                                               md:w-1/3"> Past Gallery </button>
-                        </section>
-                    </div>
+                {/* event cards */}
+                <section className="flex flex-col gap-4
+                                    md:gap-[1.5rem]
+                                    lg:items-center lg:w-fit">
+                    {/* title */}
+                    <h1 className="text-[#672F2F]/90 mb-[1rem]
+                                    md:text-[2.5rem] md:self-start
+                                    "> Upcoming Events </h1>
+                    <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
+                    <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
+                    <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
+                </section>
+
+                <hr className="self-center w-3/4 border-0.5 border-gray-300 
+                               lg:hidden"/>
+
+                {/* event picked - to be made into an event card layout */}
+                <div className="flex flex-col gap-y-8 bg-[#672F2F]/10
+                                lg:w-3/4">
+                        <EventCardDetails/>
                 </div>
             </div>
 
             {/* Donation Section */}
-            <div className="flex flex-row justify-center items-center mb-30 p-5 w-full bg-[url(../assets/event-thumbnail.jpg)] bg-top bg-cover bg-no-repeat">
-                {/* donate card */}
-                <DonationCard/>
-                
+            <div className=" bg-[#FAF5EF] mb-30 p-5">
+                <div className="lg:relative lg:left-[25%]">
+                    {/* donate card */}
+                    <DonationCard/>
+                    {/*background image*/}
+                    <img src={PlaceHolder} alt="loading" className="w-[40%] object-cover hidden lg:block"/>
+                </div>
             </div>
 
             {/* Sponsors Section */}

@@ -6,7 +6,8 @@ import mailIcon from "../../assets/footer-mail-icon.svg"
 export default function LandingGallery() {
     return <footer className="flex flex-col p-5 pt-10 gap-y-[3rem] bg-[#001524]"> 
         {/* Title & Description */}
-        <section className="flex flex-col gap-y-[1rem]">
+        <section className="flex flex-col gap-y-[1rem]
+                            lg:w-1/2">
             <h1 className="text-[2.5rem] text-[#ff7d00]/90"> Contact Us! </h1>
             <p className="text-[1rem] text-[#DDF1FF]/70 leading-7"> Got questions or ready to start a project? We’re all ears! Reach out to  us today to discuss your ideas, schedule a consultation, or simply say  hello. We can’t wait to hear from you! </p>
         </section>

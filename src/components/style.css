@@ -13,7 +13,7 @@
 }
 
 @utility leaflet-style {
-    @apply h-[15rem] w-full
+    @apply h-[20rem] w-full
 }
 
 @layer base {
