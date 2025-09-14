@@ -24,7 +24,7 @@ export default function EventCard({ name = "empty", time = "empty" } : { name?: 
                 
                 {/* arrow button */}
                 <section className="self-end text-end">
-                    <button className="text-[1rem] hover:text-[#672F2F]"> {">"} </button>
+                    <button className="text-[1rem] hover:text-[#672F2F]"> {"->"} </button>
                 </section>
             </div>
         </>

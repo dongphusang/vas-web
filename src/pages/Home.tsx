@@ -73,7 +73,7 @@ export default function Home() {
                 <section className="flex flex-col self-start items-start px-10 gap-y-10 md:max-w-5/6 lg:max-w-3/5 md:p-20"> 
                     <h1 className="leading-13 md:text-5xl"> {HOME.PROGRAM_OFFERING_TITLE} </h1>
                     <p className="leading-8 font-medium text-[#672F2F]/70 md:text-[1.3rem]"> {HOME.PROGRAM_OFFERING_TEXT} </p>
-                    <button className="gradient-button-1"> {HOME.PROGRAM_BUTTON_TEXT} </button>
+                    <button className="gradient-button-1 h-[2.5rem]"> {HOME.PROGRAM_BUTTON_TEXT} </button>
                 </section>
 
                 {/* program cards */}
@@ -104,23 +104,23 @@ export default function Home() {
                     <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
                 </section>
 
-                <hr className="self-center w-3/4 border-0.5 border-gray-300 
+                <hr className="self-center w-1/4 border-0.5 border-gray-300 
                                lg:hidden"/>
 
                 {/* event picked - to be made into an event card layout */}
-                <div className="flex flex-col gap-y-8 bg-[#672F2F]/10
+                <div className="flex flex-col bg-[#672F2F]/10
                                 lg:w-3/4">
                         <EventCardDetails/>
                 </div>
             </div>
 
             {/* Donation Section */}
-            <div className=" bg-[#FAF5EF] mb-30 p-5">
-                <div className="lg:relative lg:left-[25%]">
+            <div className="flex flex-col items-center justify-center bg-[#FAF5EF] mb-30 p-5">
+                <div className="lg:relative bg-amber-200">
+                    {/*background image*/}
+                    <img src={PlaceHolder} alt="loading" className="w-[44rem] object-cover hidden lg:block"/>
                     {/* donate card */}
                     <DonationCard/>
-                    {/*background image*/}
-                    <img src={PlaceHolder} alt="loading" className="w-[40%] object-cover hidden lg:block"/>
                 </div>
             </div>
 

@@ -37,7 +37,7 @@ export default function EventCardDetails ({ thumbnail = "", title = "", location
                 <section className="flex flex-col gap-1 text-nowrap px-5
                                     lg:w-1/2">
                     {/* location */}
-                    <div className='flex flex-row gap-x-2.5'> 
+                    <div className='flex flex-row gap-x-3 pl-0.75'> 
                         <img src={EventLocationLogo}/>
                         <p className="text-[1rem] text-[#121212]/90"> Somewhere, IDK, Canada </p> 
                     </div>
@@ -61,9 +61,9 @@ export default function EventCardDetails ({ thumbnail = "", title = "", location
 
                 {/* buttons */}
                 <section className='flex flex-col gap-y-4 mt-[0.5rem] w-full p-5 pb-7'>
-                    <button className="gradient-button-1 w-2/3 h-[3rem]
+                    <button className="gradient-button-1 w-1/2 h-[2.5rem]
                                         md:w-1/5"> Get Ticket! </button>
-                    <button className="secondary-button w-2/3 h-[3rem]
+                    <button className="secondary-button w-1/2 h-[2.5rem]
                                         md:w-1/5"> Past Gallery </button>
                 </section>
             </div>
