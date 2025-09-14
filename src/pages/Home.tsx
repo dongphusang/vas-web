@@ -11,6 +11,9 @@ import scotiaWealthLogo from "../assets/sponsor-scotia-logo.svg"
 import diamondTitleLogo from "../assets/sponsor-diamondtitle-logo.svg"
 import silverTitleLogo from "../assets/sponsor-silvertitle-logo.svg"
 import bronzeTitleLogo from "../assets/sponsor-bronzetitle-logo.svg"
+import chessThumbnail from "../assets/program-thumbnail-chess.png"
+import pianoThumbnail from "../assets/program-thumbnail-piano.png"
+import artThumbnail from "../assets/program-thumbnail-art.png"
 import { HOME } from "../assets/HomeContent";
 import CardTypeOne from "../components/CardTypeOne";
 import "./style.css";
@@ -80,9 +83,9 @@ export default function Home() {
                 <section className="flex flex-col justify-center items-center p-10 bg-[#672F2F]/25 w-full
                                     md:p-20 gap-10 md:gap-20
                                     lg:flex-row lg:justify-around">
-                    <CardTypeOne name="Vietnamese Language" />
-                    <CardTypeOne name="Piano" />
-                    <CardTypeOne name="Chess" />
+                    <CardTypeOne name="Chess" link={chessThumbnail} />
+                    <CardTypeOne name="Piano" link={pianoThumbnail}/>
+                    <CardTypeOne name="Arts/Crafts Session" link={artThumbnail}/>
                 </section>        
             </div>
 
@@ -104,7 +107,7 @@ export default function Home() {
                     <EventCard name="Vietnamese Lunar New Year" time="06:00 - 11:00"/>
                 </section>
 
-                <hr className="self-center w-1/4 border-0.5 border-gray-300 
+                <hr className="self-center w-1/2 border-0.5 border-gray-300 
                                lg:hidden"/>
 
                 {/* event picked - to be made into an event card layout */}
