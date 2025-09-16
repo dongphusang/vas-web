@@ -9,7 +9,7 @@ export default function EventCardDetails ({ thumbnail = "", title = "", location
                                         : { thumbnail?: string, title?:string, location?:string, date?:string, whom?:string, description?:string, priButtonTxt?:string, secButtonTxt?:string}) {
     return (
 
-            <div className="flex flex-col justify-center items-start gap-y-5 tracking-wide shadow-md shadow-black/30">
+            <div className="flex flex-col justify-center items-start gap-y-5 tracking-wide shadow-md shadow-black/40">
 
                 {/* Thumbnail */}
                 <section className='relative w-full'>
@@ -55,15 +55,15 @@ export default function EventCardDetails ({ thumbnail = "", title = "", location
 
                 {/* Event Description */}
                 <p className="text-[1.1rem] text-[#672F2F]/70 leading-7 tracking-wider px-5
-                              lg:w-1/2">
+                              lg:w-2/3">
                     A journey into the heart of Vietnamese heritage, where every smile, every dance, and every bite is a testament to a rich, enduring culture. Let's ring in the new year with warmth and wonder!
                 </p>
 
                 {/* buttons */}
                 <section className='flex flex-col gap-y-4 mt-[0.5rem] w-full p-5 pb-7'>
-                    <button className="gradient-button-1 w-1/2 h-[2.5rem]
+                    <button className="gradient-button-1 w-1/2 h-[2.5rem] text-[0.8rem]
                                         md:w-1/5"> Get Ticket! </button>
-                    <button className="secondary-button w-1/2 h-[2.5rem]
+                    <button className="secondary-button w-1/2 h-[2.5rem] text-[0.8rem]
                                         md:w-1/5"> Past Gallery </button>
                 </section>
             </div>

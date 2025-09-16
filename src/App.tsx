@@ -8,6 +8,7 @@ import Memory from "./pages/Memory";
 import JoinUs from "./pages/JoinUs";
 
 
+
 function App() {
   return <>
     {/* <NavBar/> */}
