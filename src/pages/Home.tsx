@@ -14,13 +14,13 @@ import bronzeTitleLogo from "../assets/sponsor-bronzetitle-logo.svg"
 import chessThumbnail from "../assets/program-thumbnail-chess.png"
 import pianoThumbnail from "../assets/program-thumbnail-piano.png"
 import artThumbnail from "../assets/program-thumbnail-art.png"
+import donationBg from "../assets/donation-bg.jpg"
 import { HOME } from "../assets/HomeContent";
 import CardTypeOne from "../components/CardTypeOne";
 import "./style.css";
 import EventCard from "../components/EventCard";
 import EventCardDetails from "../components/EventCardDetails";
 import SponsorCard from "../components/SponsorCard";
-import PlaceHolder from "../assets/event-thumbnail.jpg";
 import DonationCard from "../components/DonationCard";
 import { useState, useEffect } from "react";
 
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center bg-[#FAF5EF] mb-30 p-5">
                 <div className="lg:relative bg-amber-200">
                     {/*background image*/}
-                    <img src={PlaceHolder} alt="loading" className="w-[44rem] object-cover hidden lg:block"/>
+                    <img src={donationBg} alt="loading" className="w-[44rem] object-cover hidden lg:block"/>
                     {/* donate card */}
                     <DonationCard/>
                 </div>
