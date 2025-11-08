@@ -1,15 +1,11 @@
 @import "tailwindcss";
 
 .nav {
-  @apply flex items-stretch justify-center text-black;
+  @apply flex sticky top-0 justify-between px-[3rem] bg-[#FAF5EF]/25 text-black;
 }
 
 .nav ul {
   @apply flex p-0 m-0 list-none gap-[3rem];
-}
-
-.nav img {
-  @apply pr-[7rem];
 }
 
 .nav a {

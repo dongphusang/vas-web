@@ -6,12 +6,16 @@ import Programs from "./pages/Programs";
 import Team from "./pages/Team";
 import Memory from "./pages/Memory";
 import JoinUs from "./pages/JoinUs";
-
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 
 function App() {
+
+  const queryClient = new QueryClient();
+
   return <>
-    {/* <NavBar/> */}
+  <QueryClientProvider client={queryClient}>
+    <NavBar/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/team" element={<Team />} />
@@ -20,6 +24,7 @@ function App() {
       <Route path="/join" element={<JoinUs />} />
     </Routes>
     <Footer/>
+    </QueryClientProvider>
   </>
 }
 
