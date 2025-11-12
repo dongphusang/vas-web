@@ -2,6 +2,7 @@ import "./style.css";
 import clockIcon from '../assets/clock-icon.svg';
 
 export default function EventList ({eventList, setEventList, setEvent} : {eventList : any, setEventList:any, setEvent:any})  {
+    setEventList;
     return (
         <>
             {eventList.map((event : any) => (
@@ -13,7 +14,7 @@ export default function EventList ({eventList, setEventList, setEvent} : {eventL
                     </section>
                     {/* name & time */}
                     <section className="self-center flex flex-col justify-start items-start mr-[3rem]">
-                        <p className="text-[1rem] font-medium"> Vietnamese Lunar New Year </p>
+                        <p className="text-[1rem] font-medium"> {event.title} </p>
                         <div className="flex flex-row gap-x-2">
                             <img src={clockIcon} className="w-[1rem]"></img>
                             <p className="text-[1rem] text-nowrap"> {event.date.split(',')[2]} </p>                      

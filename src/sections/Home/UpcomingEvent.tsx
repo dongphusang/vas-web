@@ -10,15 +10,17 @@ export default function UpcomingEvent () {
     const [eventList, setEventList] = useState([]);
     const [event, setEvent] = useState({id: 1, 
                                     thumbnail_link: PlaceHolderThumbnail, 
-                                    title: '', 
-                                    location: '',
+                                    title: 'The "How to Patch a Cat" Experience', 
+                                    location: 'Some Cat Cafe',
                                     date: 'Sunday, 01 Jan 2025, 06:00PM', // needs this initial value so no crash because split() can't be done on empty string
-                                    organizer: '',
-                                    description: ''});
+                                    organizer: 'Huh, who?',
+                                    description: `Ever wondered how to apply a patch to a creature that refuses to sit still? Join us for 'How to Patch a Cat', the world's least practical workshop on feline maintenance. We'll cover essential skills like: Negotiating with claws; Applying bandages to moving targets; And accepting that you'll never win an argument with a cat. Bring your sense of humour (and maybe some band-aids).`});
 
     const fetchEvents = async () => {
         try {
-            const response = await axios.get("http://localhost:8000/api/events/");
+            const response = 
+            //await axios.get("http://localhost:8000/api/events/");
+            await axios.get("https://vietnamesesudbury.org/api/events");
             setEventList(response.data);
         } catch (err) {
             console.log(err);
@@ -74,7 +76,7 @@ export default function UpcomingEvent () {
                             </div>
                         </div>
                         {/* img */}
-                        <img src={PlaceHolderThumbnail} 
+                        <img src={event.thumbnail_link}
                             alt="" 
                             className='h-[17rem] w-full object-cover object-center bg-no-repeat
                                     md:h-[30rem]
@@ -90,7 +92,7 @@ export default function UpcomingEvent () {
                     <section className="flex flex-col gap-1 text-nowrap px-5
                                         lg:w-1/2">
                         {/* location */}
-                        <div className='flex flex-row gap-x-3 pl-0.75'> 
+                        <div className='flex flex-row gap-x-3 pl-0.7'> 
                             <img src={EventLocationLogo}/>
                             <p className="text-[1rem] text-[#121212]/90"> {event.location} </p> 
                         </div>
@@ -100,7 +102,7 @@ export default function UpcomingEvent () {
                             <p className="text-[1rem] text-[#121212]/90"> {event.date} </p>
                         </div>
                         {/* whose */}
-                        <div className='flex flex-row gap-x-2.5'>
+                        <div className='flex flex-row gap-x-1.5'>
                             <img src={EventWhoseLogo}/>
                             <p className="text-[1rem] text-[#121212]/90"> By <b>{event.organizer}</b> </p>
                         </div>
