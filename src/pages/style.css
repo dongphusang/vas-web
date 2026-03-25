@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+@layer base {
+    h1 {
+        @apply font-serif
+    }
+    
+    p {
+        @apply font-serif
+    }
+
+    h2 {
+        @apply font-serif
+    }
+}
+
+@utility text-default {
+    @apply text-[1.1rem] leading-8 tracking-wide text-[#FAF5EF]/70
+            2xl:text-[1.4rem] 2xl:leading-11 2xl:tracking-widest
+}
+
+@utility text-title {
+    @apply text-[3rem] leading-16 tracking-wide text-[#FAF5EF]/90
+            2xl:text-[4rem] 2xl:leading-18 2xl:tracking-wider
+}
+
+

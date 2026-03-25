@@ -8,7 +8,7 @@ import PlaceHolderThumbnail from '../../assets/home_upcomingEvent_placeHolder_th
 
 export default function UpcomingEvent () {
     const [eventList, setEventList] = useState([]);
-    const [event, setEvent] = useState({id: 1, 
+    const [event, setEvent] = useState({id: 0, 
                                     thumbnail_link: PlaceHolderThumbnail, 
                                     title: 'The "How to Patch a Cat" Experience', 
                                     location: 'Some Cat Cafe',
@@ -52,7 +52,7 @@ export default function UpcomingEvent () {
                                 md:gap-[1.5rem]
                                 lg:items-center lg:w-fit">
                 {/* title */}
-                <h1 className="text-[#672F2F]/90 mb-[1rem]
+                <h1 className="text-[#672F2F]/90 mb-[1rem] text-4xl
                                 md:text-[2.5rem] md:self-start
                                 "> Upcoming Events </h1>
                 <EventList setEventList={setEventList} eventList={eventList} setEvent={setEvent}/>
@@ -110,16 +110,20 @@ export default function UpcomingEvent () {
 
                     {/* Event Description */}
                     <p className="text-[1.1rem] text-[#672F2F]/70 leading-7 tracking-wider px-5
-                                    lg:w-2/3">
+                                    lg:w-[90%]">
                         {event.description}
                     </p>
 
                     {/* buttons */}
                     <section className='flex flex-col gap-y-4 mt-[0.5rem] w-full p-5 pb-7'>
-                        <button className="gradient-button-1 w-1/2 h-[2.5rem] text-[0.8rem]
-                                            md:w-1/5"> Get Ticket! </button>
-                        <button className="secondary-button w-1/2 h-[2.5rem] text-[0.8rem]
-                                            md:w-1/5"> Past Gallery </button>
+                        <a className="gradient-button-1 w-1/2 h-[2.5rem] text-[10px] text-center
+                                            lg:w-2/5" href='' target="_blank" rel="noopener noreferrer"> 
+                                            <p className="text-[0.8rem] font-semibold text-[#FAF5EF]/70"> Get Ticket! </p>
+                        </a>
+                        <a className="secondary-button w-1/2 h-[2.5rem] text-[0.8rem] text-center
+                                            lg:w-2/5"> 
+                                            <p className="text-[0.8rem] font-semibold"> N/A </p>
+                        </a>
                     </section> 
                 </div>
             </div>

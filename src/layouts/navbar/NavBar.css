@@ -1,17 +1,7 @@
 @import "tailwindcss";
 
-.nav {
-  @apply flex sticky top-0 justify-between px-[3rem] bg-[#FAF5EF]/25 text-black;
-}
 
-.nav ul {
-  @apply flex p-0 m-0 list-none gap-[3rem];
-}
 
-.nav a {
-  @apply text-inherit font-bold decoration-0 h-[100%] flex items-center p-[0.25rem];
-}
-
-.nav li:hover {
-  @apply text-gray-500;
+a {
+  @apply block relative px-6 py-3 lg:-mr-0.25 lg:text-xs lg:font-semibold text-2xl uppercase text-black transition-colors hover:text-[#672F2F];
 }

@@ -20,8 +20,8 @@ export default function DonationCard() {
 
                 {/* button */}
                 <section className="mt-5">
-                    <button className="gradient-button-1 w-1/2 h-[2.5rem] text-[0.8rem]
-                                       md:w-1/3"> DONATE NOW </button>
+                    <button className="bg-gray-500 w-1/2 h-[2.5rem] text-[0.8rem]
+                                       md:w-1/3"> N/A </button>
                 </section>
             </div>
         </div>

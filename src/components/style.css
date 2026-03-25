@@ -4,6 +4,10 @@
 
 }
 
+@utility gradient-button-1 {
+    @apply w-40 h-12 rounded-4xl border-1 border-[#889E73] bg-gradient-to-tl shadow-lg shadow-black/20 from-[#672F2F] to-[#A84A4A] text-[#FAF5EF] text-[1rem] text-sm font-semibold hover:bg-gradient-to-bl hover:shadow-[#672F2F]/40 hover:outline-none
+}
+
 @utility left-aligned { 
     @apply flex flex-col max-w-[27.75rem] min-w-[13.5rem] gap-y-[1rem] text-left
 }

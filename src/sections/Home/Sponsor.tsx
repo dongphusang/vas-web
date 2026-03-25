@@ -1,14 +1,21 @@
-import krystalBeautyLogo from "../../assets/sponsor-krystalbeauty-logo.svg"
-import waldenLogo from "../../assets/sponsor-walden-logo.svg"
+
 import innovaLogo from "../../assets/sponsor-innova-logo.svg"
-import pharmaChoiceLogo from "../../assets/sponsor-pharma-logo.svg"
-import nickelCitySurplusLogo from "../../assets/sponsor-nickelcity-logo.svg"
 import teamTalaricoLogo from "../../assets/sponsor-talarico-logo.svg"
-import eyeLevelLogo from "../../assets/sponsor-eyelevel-logo.svg"
 import scotiaWealthLogo from "../../assets/sponsor-scotia-logo.svg"
-import diamondTitleLogo from "../../assets/sponsor-diamondtitle-logo.svg"
-import silverTitleLogo from "../../assets/sponsor-silvertitle-logo.svg"
-import bronzeTitleLogo from "../../assets/sponsor-bronzetitle-logo.svg"
+
+import wellnessLogo from "../../assets/wellnessstudio.jpg"
+
+import huLogo from "../../assets/drmccormick.jpeg"
+
+import valleyPoultry from "../../assets/valleypoultry.png"
+
+import iopticalLogo from "../../assets/iopticalinc.png"
+import drNallaLogo from "../../assets/drnalla.svg"
+import climateControl from "../../assets/climatecontrol.png"
+import baophuongLogo from "../../assets/baophuong.svg"
+import anonymousLogo from "../../assets/anonymous.svg"
+import dustinLogo from "../../assets/dustin.svg"
+
 import SponsorCard from "../../components/SponsorCard";
 
 export default function Sponsor () {
@@ -18,61 +25,124 @@ export default function Sponsor () {
                             lg:items-center lg:text-center lg:gap-[5rem]">
                 {/* title & description*/}
                 <section className="flex flex-col gap-[1rem]">
-                    <h1 className="text-[2.5rem] text-[#672F2F]/90"> Our Sponsors of 2025 </h1>
+                    <h1 className="text-[2.5rem] text-[#672F2F]/90"> Our Sponsors of 2026 </h1>
                     <p className="text-[1rem] text-[#672F2F]/70"> Our big events is kindly supported by our big wig partners. Big thanks to them all </p>
                 </section>
                 
-                {/* diamond sponsors */}
+                {/* golden lion patrons */}
                 <div className="flex flex-col gap-[1.5rem]
                                 lg:gap-[2rem]">
                     {/* title */}
                     <section className="flex flex-row gap-[0.5rem]
                                         lg:justify-center">
-                        <h2 className="text-[1.8rem] gradient-header"> Diamond Sponsors </h2>
-                        <img src={diamondTitleLogo}/>
+                        <h2 className="text-[2rem] gradient-header"> Golden Lion Patron </h2>
                     </section>
                     {/* sponsors */}
-                    <section className="flex flex-col gap-[1rem]
-                                        md:flex-row">
-                        <SponsorCard imageLocation={krystalBeautyLogo} link="https://krystalbeautyspasudbury.ca/"/>
-                        <SponsorCard imageLocation={waldenLogo} link="https://waldenuniversal.com/"/>
+                    <section className="flex flex-col gap-[2rem]
+                                        md:grid md:grid-cols-2 md:w-fit md:auto-rows-auto
+                                        lg:grid lg:grid-cols-3">
+                        <SponsorCard imageLocation={huLogo} link="https://www.huntingtonu.ca/"/>
+                        <SponsorCard imageLocation={valleyPoultry} link="https://www.facebook.com/valleypoultrypackers/"/>                 
+                        <SponsorCard imageLocation={wellnessLogo} link="https://sudburywellnessstudio.com/"/>
                     </section>
                 </div>
                 
-                {/* silver sponsors */}
+                {/* phoenix sponsors */}
                 <div className="flex flex-col gap-[1.5rem]
                                 lg:gap-[2rem]">
                     {/* title */}
                     <section className="flex flex-row gap-[0.5rem]
                                         lg:justify-center">
-                        <h2 className="text-[1.8rem] gradient-header"> Silver Sponsors</h2>
-                        <img src={silverTitleLogo}/>
+                        <h2 className="text-[2rem] gradient-header"> Phoenix Sponsor </h2>
                     </section>
                     {/* sponsors */}
-                    <section className="flex flex-col gap-[1rem]
-                                        md:flex-row">
+                    <section className="flex flex-col gap-[2rem]
+                                        md:grid md:grid-cols-2 md:w-fit
+                                        lg:grid lg:auto-rows-auto">
                         <SponsorCard imageLocation={innovaLogo} link="https://inwp.ca/"/>
+                        <SponsorCard imageLocation={anonymousLogo} link=""/>
                     </section>
                 </div>
 
-                {/* bronze sponsors */}
+                {/* drum partners */}
                 <div className="flex flex-col gap-[1.5rem]
                                 lg:gap-[2rem]">
                     {/* title */}
                     <section className="flex flex-row gap-[0.5rem]
                                         lg:justify-center">
-                        <h2 className="text-[1.8rem] gradient-header"> Bronze Sponsors </h2>
-                        <img src={bronzeTitleLogo}/>
+                        <h2 className="text-[2rem] gradient-header"> Drum Partner </h2>
                     </section>
                     {/* sponsors */}
                     <section className="flex flex-col gap-[1rem]
                                         md:grid md:grid-cols-2 md:w-fit
-                                        lg:grid-cols-5 lg:gap-[2rem]"> 
-                        <SponsorCard imageLocation={pharmaChoiceLogo} link="https://www.pharmachoice.com/locations/lasalle-clinic/"/>
-                        <SponsorCard imageLocation={nickelCitySurplusLogo} link="https://www.facebook.com/nickelcitysurplus?mibextid=LQQJ4d"/>
+                                        lg:grid-cols-3 lg:gap-[2rem]"> 
+                        <SponsorCard imageLocation={scotiaWealthLogo} link="https://www.scotiawealthmanagement.com/ca/en.html"/>
                         <SponsorCard imageLocation={teamTalaricoLogo} link="https://teamtalarico.ca/"/>
-                        <SponsorCard imageLocation={eyeLevelLogo} link="https://www.myeyelevel.com/US/center/sudbury"/>
-                        <SponsorCard imageLocation={scotiaWealthLogo} link="https://www.scotiawealthmanagement.com/intl/en/home.html"/>
+                        <SponsorCard imageLocation={anonymousLogo} link=""/>
+                    </section>
+                </div>
+
+                {/* lantern advocates */}
+                <div className="flex flex-col gap-[1.5rem]
+                                lg:gap-[2rem]">
+                    {/* title */}
+                    <section className="flex flex-row gap-[0.5rem]
+                                        lg:justify-center">
+                        <h2 className="text-[2rem] gradient-header"> Lantern Advocate </h2>
+                    </section>
+                    {/* sponsors */}
+                    <section className="flex flex-col gap-[1rem]
+                                        md:grid md:grid-cols-2 md:w-fit
+                                        lg:grid-cols-2 lg:gap-[2rem]"> 
+                        <SponsorCard imageLocation={iopticalLogo} link="https://iopticalinc.wixsite.com/iopticalinc/brands"/>
+                        <SponsorCard imageLocation={drNallaLogo} link="https://register.cpso.on.ca/physician-info/?cpsonum=91526"/>
+                    </section>
+                </div>
+
+                {/* lotus friend plus */}
+                <div className="flex flex-col gap-[1.5rem]
+                                lg:gap-[2rem]">
+                    {/* title */}
+                    <section className="flex flex-row gap-[0.5rem]
+                                        lg:justify-center">
+                        <h2 className="text-[2rem] gradient-header"> Lotus Friend Plus </h2>
+                    </section>
+                    {/* sponsors */}
+                    <section className="flex flex-col gap-[1rem]
+                                        md:grid md:grid-cols-2 md:w-fit
+                                        lg:grid-cols-2 lg:gap-[2rem]"> 
+                        <SponsorCard imageLocation={baophuongLogo} link=""/>
+                        <SponsorCard imageLocation={climateControl} link="https://climatecontrolsudbury.ca/"/>
+                    </section>
+                </div>
+
+                {/* lotus friends */}
+                <div className="flex flex-col gap-[1.5rem]
+                                lg:gap-[2rem]">
+                    {/* title */}
+                    <section className="flex flex-row gap-[0.5rem]
+                                        lg:justify-center">
+                        <h2 className="text-[2rem] gradient-header"> Lotus Friend </h2>
+                    </section>
+                    {/* sponsors */}
+                    <section className="flex flex-col gap-[1rem]
+                                        md:grid md:grid-cols-1 md:w-fit"> 
+                        <SponsorCard imageLocation={anonymousLogo} link=""/>
+                    </section>
+                </div>
+
+                {/* bamboo supporter */}
+                <div className="flex flex-col gap-[1.5rem]
+                                lg:gap-[2rem]">
+                    {/* title */}
+                    <section className="flex flex-row gap-[0.5rem]
+                                        lg:justify-center">
+                        <h2 className="text-[2rem] gradient-header"> Bamboo Supporter </h2>
+                    </section>
+                    {/* sponsors */}
+                    <section className="flex flex-col gap-[1rem]
+                                        md:grid md:grid-cols-1 md:w-fit"> 
+                        <SponsorCard imageLocation={dustinLogo} link=""/>
                     </section>
                 </div>
             </div>

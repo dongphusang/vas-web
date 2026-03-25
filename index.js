@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/api/events", (req,res) => {
-    const query = "SELECT * FROM event"
+    const query = "SELECT * FROM event";
     db.query(query, (err, data) => {
         if (err) return res.json({ message: "Server Error: "+err})
         return res.json(data);
@@ -32,6 +32,32 @@ app.get("/api/event/:id", (req,res) => {
         return res.json(data);
     });
 });
+
+app.get('/api/memories', (req, res) => {
+    const query = 'SELECT * FROM memory';
+    db.query(query, (err, data) => {
+        if(err) return res.json({message: 'Server Error: ' + err});
+        return res.json(data);
+    })
+})
+
+app.get('/api/memory/:id', (req, res) => {
+    const id = req.params.id;
+    const query = "SELECT * FROM gallery_index WHERE `memory_id` = ?";
+    db.query(query, [id], (err, data) => {
+        if(err) return res.json({message: 'Server Error: ' + err});
+        return res.json(data);       
+    })
+})
+
+app.get('/api/gallery/:id', (req, res) => {
+    const id = req.params.id;
+    const query = `SELECT * FROM ${id}`;
+    db.query(query, (err, data) => {
+        if(err) return res.json({message: 'Server Error: ' + err});
+        return res.json(data);
+    })
+})
 
 app.listen(port, () => {
     console.log("listening on port 8000");
