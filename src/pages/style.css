@@ -25,4 +25,9 @@
             2xl:text-[4rem] 2xl:leading-18 2xl:tracking-wider
 }
 
+@utility text-title-t2 {
+    @apply text-[1.3rem] tracking-widest text-[#FAF5EF]/90
+            2xl:text-[2rem] 2xl:leading-18 2xl:tracking-widest
+}
+
 

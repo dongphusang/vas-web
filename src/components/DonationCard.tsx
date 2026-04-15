@@ -20,8 +20,10 @@ export default function DonationCard() {
 
                 {/* button */}
                 <section className="mt-5">
-                    <button className="bg-gray-500 w-1/2 h-[2.5rem] text-[0.8rem]
-                                       md:w-1/3"> N/A </button>
+                    <a className="gradient-button-1 w-1/2 h-[2.5rem]
+                                md:w-1/3" href='https://vietnameseassociationofsudbury.ticketspice.com/crowd/vietnamese-association-of-sudbury-fundraising-campaign' target="_blank" rel="noopener noreferrer"> 
+                        <p className="text-[0.8rem] text-center font-semibold text-[#FAF5EF]/70"> DONATE </p>
+                    </a>
                 </section>
             </div>
         </div>

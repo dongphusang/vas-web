@@ -47,7 +47,7 @@ export default function NavBar() {
                     <Link onClick={handleHamburgClick} to="/memory">Memory</Link>
                     <Link onClick={handleHamburgClick} to="/programs">Programs</Link>
                     <Link onClick={handleHamburgClick} to="/join">Join us</Link>
-                    <Link onClick={handleHamburgClick} to="/donate">Donate Now!</Link>
+                    <Link onClick={handleHamburgClick} to="https://vietnameseassociationofsudbury.ticketspice.com/crowd/vietnamese-association-of-sudbury-fundraising-campaign" target="_blank" rel="noopener noreferrer">Donate Now!</Link>
                 </div>    
                 
             </nav>
