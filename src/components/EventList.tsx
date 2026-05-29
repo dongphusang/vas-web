@@ -1,6 +1,9 @@
 import "./style.css";
 import clockIcon from '../assets/clock-icon.svg';
 
+// eventList: The list of event being displayed
+// setEventList: A callback to setEventList 
+// setEvent: A callback to setEvent upon click
 export default function EventList ({eventList, setEventList, setEvent} : {eventList : any, setEventList:any, setEvent:any})  {
     setEventList;
     return (
