@@ -23,7 +23,7 @@ export default function Sponsor () {
         <>
             <div className="flex flex-col gap-[3rem] p-10 mb-30 bg-[#FAF5EF]
                             lg:items-center lg:text-center lg:gap-[5rem]">
-                {/* title & description*/}
+                {/* title & descriptio*/}
                 <section className="flex flex-col gap-[1rem]">
                     <h1 className="text-[2.5rem] text-[#672F2F]/90"> Our Sponsors of 2026 </h1>
                     <p className="text-[1rem] text-[#672F2F]/70"> Our big events is kindly supported by our big wig partners. Big thanks to them all </p>
