@@ -2,6 +2,8 @@
 import innovaLogo from "../../assets/sponsor-innova-logo.svg"
 import teamTalaricoLogo from "../../assets/sponsor-talarico-logo.svg"
 import scotiaWealthLogo from "../../assets/sponsor-scotia-logo.svg"
+import lougheedLogo from "../../assets/sponsor-lougheed-logo.svg"
+import plumbingLogo from "../../assets/sponsor-plumbing-logo.png"
 
 import wellnessLogo from "../../assets/wellnessstudio.jpg"
 
@@ -93,9 +95,11 @@ export default function Sponsor () {
                     {/* sponsors */}
                     <section className="flex flex-col gap-[1rem]
                                         md:grid md:grid-cols-2 md:w-fit
-                                        lg:grid-cols-2 lg:gap-[2rem]"> 
+                                        lg:grid-cols-4 lg:gap-[2rem]"> 
                         <SponsorCard imageLocation={iopticalLogo} link="https://iopticalinc.wixsite.com/iopticalinc/brands"/>
                         <SponsorCard imageLocation={drNallaLogo} link="https://register.cpso.on.ca/physician-info/?cpsonum=91526"/>
+                        <SponsorCard imageLocation={lougheedLogo} link="https://www.lougheedfuneralhomes.com/"/>
+                        <SponsorCard imageLocation={plumbingLogo} link="https://plumbingwarehouse.ca/"/>
                     </section>
                 </div>
 
