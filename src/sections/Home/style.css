@@ -26,3 +26,17 @@
 @utility secondary-button {
     @apply w-40 h-12 rounded-4xl border-1 border-[#889E73] shadow-lg shadow-black/20 bg-[#A84A4A]/10 hover:bg-[#A84A4A]/50 text-[#121212]/90 text-[1rem] text-sm font-semibold
 }
+
+@utility program-img {
+    @apply h-[18rem] w-[23rem] object-cover shrink-0 rounded-xs border-[#FAF5EF] border-6
+}
+
+@keyframes slide {
+    from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 1rem));
+  }
+}
+
