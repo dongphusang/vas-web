@@ -20,6 +20,7 @@ import dustinLogo from "../../assets/dustin.svg"
 
 import SponsorCard from "../../components/SponsorCard";
 
+
 export default function Sponsor () {
     return (
         <>
@@ -28,7 +29,7 @@ export default function Sponsor () {
                 {/* title & descriptio*/}
                 <section className="flex flex-col gap-[1rem]">
                     <h1 className="text-[2.5rem] text-[#672F2F]/90"> Our Sponsors of 2026 </h1>
-                    <p className="text-[1rem] text-[#672F2F]/70"> Our big events is kindly supported by our big wig partners. Big thanks to them all </p>
+                    <p className="text-[1.1rem] leading-8 font-medium text-[#672F2F]/70 lg:text-[1.2rem]"> Our big events is kindly supported by our big wig partners. Big thanks to them all </p>
                 </section>
                 
                 {/* golden lion patrons */}

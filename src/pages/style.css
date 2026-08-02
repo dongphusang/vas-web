@@ -16,7 +16,7 @@
 }
 
 @utility text-default {
-    @apply text-[1.1rem] leading-8 tracking-wide text-[#FAF5EF]/70
+    @apply text-[1.1rem] leading-8 tracking-wide font-medium text-[#FAF5EF]/70
             2xl:text-[1.4rem] 2xl:leading-11 2xl:tracking-widest
 }
 
@@ -28,6 +28,13 @@
 @utility text-title-t2 {
     @apply text-[1.3rem] tracking-widest text-[#FAF5EF]/90
             2xl:text-[2rem] 2xl:leading-18 2xl:tracking-widest
+}
+
+.text-def {
+    font-size: 1.1rem;
+    line-height: calc(var(--spacing) * 8);
+    letter-spacing: 0.025rem;
+    color: color-mix(in oklab, #FAF5EF 70%, transparent);
 }
 
 

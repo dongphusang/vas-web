@@ -14,7 +14,7 @@ export default function TeamCard({ name = "David Ewing Bui", thumbnail = "empty"
                     {/* Name */}
                     <p className='text-2xl pb-1 tracking-wide text-[#672F2F]/90'> {name} </p>
                     {/* Role */}
-                    <p className='text-lg tracking-wide text-[#672F2F]/70'> {role} </p>
+                    <p className='text-lg tracking-wide font-medium text-[#672F2F]/70'> {role} </p>
                 </div>
                 <hr className='border-[#672F2F]/90 bg-[#672F2F]/70 h-[1.5px] w-[150px]'/>
                 <div className='flex flex-row items-center justify-center'>

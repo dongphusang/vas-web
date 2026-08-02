@@ -1,6 +1,5 @@
 import { HOME } from "../../assets/HomeContent.ts";
 import landingGallery from "../../assets/landing-gallery.png";
-import "./style.css";
 
 export default function Hero () {
     return (
@@ -22,11 +21,11 @@ export default function Hero () {
                                     lg:order-1 lg:content-stretch lg:justify-items-end lg:h-full lg:text-end">
                         <section className="flex flex-col gap-y-2.5 w-[14rem]"> {/* birth */}
                             <h1 className="text-[2.5rem] gradient-header"> {HOME.BIRTH_TITLE} </h1>
-                            <p className="text-[1rem] text-[#672F2F]/70"> {HOME.BIRTH_TEXT} </p>
+                            <p className="text-[1.1rem] leading-8 text-[#672F2F]/70 font-medium lg:text-[1.2rem]"> {HOME.BIRTH_TEXT} </p>
                         </section>
                         <section className="flex flex-col gap-y-2.5 w-[16rem]"> {/* free classes */}
                             <h1 className="text-[2.5rem] gradient-header"> {HOME.CLASSES_TITLE} </h1>
-                            <p className="text-[1rem] text-[#672F2F]/70"> {HOME.CLASSES_TEXT} </p>
+                            <p className="text-[1.1rem] leading-8 text-[#672F2F]/70 font-medium lg:text-[1.2rem]"> {HOME.CLASSES_TEXT} </p>
                         </section>                
                     </div>
                     
@@ -35,13 +34,13 @@ export default function Hero () {
                                     lg:order-3 lg:content-stretch lg:justify-items-start lg:h-full lg:text-start">
                         <section className="flex flex-col gap-y-2.5 w-[14rem]"> {/* event quant */}
                             <h1 className="text-[2.5rem] gradient-header"> {HOME.EVENTQUANT_TITLE} </h1>
-                            <p className="text-[1rem] text-[#672F2F]/70"> {HOME.EVENTQUANT_TEXT} </p>
+                            <p className="text-[1.1rem] leading-8 text-[#672F2F]/70 font-medium lg:text-[1.2rem]"> {HOME.EVENTQUANT_TEXT} </p>
                         </section>
                         <section className="flex flex-col gap-y-2.5 w-[20rem]
                                             lg:pt-[2.5rem]"> {/* mission */}
                             <h1 className="text-[2.5rem] gradient-header"> {HOME.MISSION_TITLE} </h1>
-                            <p className="text-[1rem] text-[#672F2F]/70"> {HOME.MISSION_TEXT} </p>
-                            <p className="text-[1rem] text-[#672F2F]/70"> {HOME.MISSION_EXTRA_TEXT} </p>
+                            <p className="text-[1.1rem] leading-8 text-[#672F2F]/70 font-medium lg:text-[1.2rem]"> {HOME.MISSION_TEXT} </p>
+                            <p className="text-[1.1rem] leading-8 text-[#672F2F]/70 font-medium lg:text-[1.2rem]"> {HOME.MISSION_EXTRA_TEXT} </p>
                         </section>
                     </div>
                 </div>

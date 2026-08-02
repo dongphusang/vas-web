@@ -7,7 +7,7 @@
     }
     
     p {
-        @apply text-[#001524]/70 text-[1.1rem] font-normal font-serif
+        @apply text-blue-100/70 text-[1.1rem] font-medium font-serif
     }
 
     h2 {

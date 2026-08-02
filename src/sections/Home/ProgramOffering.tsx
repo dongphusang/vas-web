@@ -26,7 +26,6 @@ export default function ProgramOffering () {
                                   lg:text-center"> {HOME.PROGRAM_OFFERING_TEXT} </p>
                     <a className="gradient-button-1 h-[2.5rem]" href="https://docs.google.com/forms/d/1JkiMOPecIbDeqkbBc79XR5_mLeYYP6y4awZCgDlSX68/viewform?edit_requested=true&pli=1" target="_blank" rel="noopener noreferrer"> 
                         <p className="text-[0.8rem] text-center text-[#FAF5EF]/90"> Register! </p>
-
                     </a>
                 </section>
 
@@ -51,8 +50,7 @@ export default function ProgramOffering () {
                             <img src={thumb5} className="program-img"/>
                             <img src={thumb6} className="program-img"/>
                         </div>
-                    </div>
-                                          
+                    </div>                                         
                 </div>   
 
                 <img className="hidden absolute -top-10 -right-15 z-1 -rotate-10 h-150 shadow-2xl

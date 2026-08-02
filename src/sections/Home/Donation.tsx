@@ -1,6 +1,8 @@
 import DonationCard from "../../components/DonationCard";
 import donationBg from "../../assets/donation-bg.jpg"
 
+import './style.css'
+
 export default function Donation () {
     return (
         <>
