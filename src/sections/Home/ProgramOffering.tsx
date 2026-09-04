@@ -14,13 +14,13 @@ import thumb6 from '../../assets/programoff-thumb6.webp'
 export default function ProgramOffering () {
     return (
         <>
-            <div className="relative flex flex-col justify-center items-center gap-y-20 pt-5 mb-30 overflow-hidden bg-[#FAF5EF] md:gap-y-25 w-full">
+            <div className="relative flex flex-col justify-center items-center gap-y-20 mb-4 overflow-hidden bg-[#F5ECE0] md:gap-y-25 w-full">
                 {/* title */}
-                <section className="flex flex-col justify-center items-start px-10 gap-y-7 
+                <section className="flex flex-col justify-center items-start pt-10 px-10 gap-y-7 
                                     md:max-w-5/6 md:p-10
                                     lg:max-w-3/5 lg:items-center"> 
-                    <h1 className="leading-13 text-5xl
-                                   lg:text-4xl"> {HOME.PROGRAM_OFFERING_TITLE} </h1>
+                    <h1 className="leading-13 text-4xl
+                                   lg:text-5xl"> {HOME.PROGRAM_OFFERING_TITLE} </h1>
                     <p className="leading-8 font-medium text-[#672F2F]/70 
                                   md:text-[1.3rem]
                                   lg:text-center"> {HOME.PROGRAM_OFFERING_TEXT} </p>

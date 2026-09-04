@@ -28,7 +28,7 @@
 }
 
 @utility program-img {
-    @apply h-[18rem] w-[23rem] object-cover shrink-0 rounded-xs border-[#FAF5EF] border-6
+    @apply h-[18rem] w-[23rem] object-cover shrink-0 rounded-xs border-[#F5ECE0] border-6
 }
 
 @keyframes slide {

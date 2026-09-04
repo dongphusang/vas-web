@@ -24,11 +24,11 @@ import SponsorCard from "../../components/SponsorCard";
 export default function Sponsor () {
     return (
         <>
-            <div className="flex flex-col gap-[3rem] p-10 mb-30 bg-[#FAF5EF]
+            <div className="flex flex-col gap-[3rem] p-10 mb-8 bg-[#F5ECE0]
                             lg:items-center lg:text-center lg:gap-[5rem]">
                 {/* title & descriptio*/}
                 <section className="flex flex-col gap-[1rem]">
-                    <h1 className="text-[2.5rem] text-[#672F2F]/90"> Our Sponsors of 2026 </h1>
+                    <h1 className="leading-13 text-4xl text-[#672F2F]/90 lg:text-5xl"> Our Sponsors of 2026 </h1>
                     <p className="text-[1.1rem] leading-8 font-medium text-[#672F2F]/70 lg:text-[1.2rem]"> Our big events is kindly supported by our big wig partners. Big thanks to them all </p>
                 </section>
                 
@@ -41,9 +41,9 @@ export default function Sponsor () {
                         <h2 className="text-[2rem] gradient-header"> Golden Lion Patron </h2>
                     </section>
                     {/* sponsors */}
-                    <section className="flex flex-col gap-[2rem]
+                    <section className="flex flex-col gap-[1rem]
                                         md:grid md:grid-cols-2 md:w-fit md:auto-rows-auto
-                                        lg:grid lg:grid-cols-3">
+                                        lg:grid lg:grid-cols-3 lg:gap-[2rem]">
                         <SponsorCard imageLocation={huLogo} link="https://www.huntingtonu.ca/"/>
                         <SponsorCard imageLocation={valleyPoultry} link="https://www.facebook.com/valleypoultrypackers/"/>                 
                         <SponsorCard imageLocation={wellnessLogo} link="https://sudburywellnessstudio.com/"/>
@@ -59,9 +59,9 @@ export default function Sponsor () {
                         <h2 className="text-[2rem] gradient-header"> Phoenix Sponsor </h2>
                     </section>
                     {/* sponsors */}
-                    <section className="flex flex-col gap-[2rem]
+                    <section className="flex flex-col gap-[1rem]
                                         md:grid md:grid-cols-2 md:w-fit
-                                        lg:grid lg:auto-rows-auto">
+                                        lg:grid lg:auto-rows-auto lg:gap-[2rem]">
                         <SponsorCard imageLocation={innovaLogo} link="https://inwp.ca/"/>
                         <SponsorCard imageLocation={anonymousLogo} link=""/>
                     </section>
@@ -131,7 +131,8 @@ export default function Sponsor () {
                     </section>
                     {/* sponsors */}
                     <section className="flex flex-col gap-[1rem]
-                                        md:grid md:grid-cols-1 md:w-fit"> 
+                                        md:grid md:grid-cols-1 md:w-fit
+                                        lg:gap-[2rem]"> 
                         <SponsorCard imageLocation={anonymousLogo} link=""/>
                     </section>
                 </div>
@@ -146,7 +147,8 @@ export default function Sponsor () {
                     </section>
                     {/* sponsors */}
                     <section className="flex flex-col gap-[1rem]
-                                        md:grid md:grid-cols-1 md:w-fit"> 
+                                        md:grid md:grid-cols-1 md:w-fit
+                                        lg:gap-[2rem]"> 
                         <SponsorCard imageLocation={dustinLogo} link=""/>
                     </section>
                 </div>

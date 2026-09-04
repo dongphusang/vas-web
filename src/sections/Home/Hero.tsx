@@ -4,7 +4,7 @@ import landingGallery from "../../assets/landing-gallery.png";
 export default function Hero () {
     return (
         <>
-            <div className="flex flex-col p-10 mb-30 gap-y-20 bg-[#FAF5EF]">
+            <div className="flex flex-col p-10 mb-4 gap-y-20 bg-[#F5ECE0]">
                 {/* welcome */}
                 <section className="flex flex-col gap-y-10 md:items-center md:text-center">
                     <h1 className="text-5xl leading-18 tracking-wide"> {HOME.WELCOME_TITLE} </h1>

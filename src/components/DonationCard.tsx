@@ -2,8 +2,8 @@ import orgLogo from "../assets/org-logo.svg"
 
 export default function DonationCard() {
     return (
-        <div className="shadow-md shadow-black/50
-                        lg:absolute lg:w-[28rem] lg:right-[22rem] lg:top-[1.75rem]">
+        <div className="shadow-[0_19px_48px_#E1C5A3]
+                        lg:absolute lg:w-[28rem] lg:right-[22rem] lg:top-[1.75rem] lg:shadow-[-20px_0_19px_-8px_#F0E2D1]">
             <div className="flex flex-col justify-center items-stretch gap-y-4 p-7 border-b-8 border-b-[#672F2F]/90 bg-[#FAF5EF]">
                 {/* organization title */}
                 <section className="flex flex-row gap-x-2">
@@ -14,7 +14,7 @@ export default function DonationCard() {
                 {/* title & description */}
                 <section className="flex flex-col gap-y-4
                                     lg:w-[75%]">
-                    <h1 className="text-[2.5rem] text-[#672F2F]/90"> Our Hearts are Filled with Gratitude </h1>
+                    <h1 className="text-4xl text-[#672F2F]/90"> Our Hearts are Filled with Gratitude </h1>
                     <p className="text-[1.1rem] leading-8 font-medium text-[#672F2F]/70 lg:text-[1.2rem]"> We give thanks for your kind support to fuel the hope we share. Strong together, brighter together. </p>
                 </section>
 
